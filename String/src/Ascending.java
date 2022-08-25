@@ -15,10 +15,12 @@ public class Ascending {
 		{
 			for(int j=i+1;j<str.length;j++)//to compare string length
 			{
+				if (str[i].length()>str[j].length())
+				{
 				String temp=str[i];
 				str[i]=str[j];
 				str[j]=temp;
-			
+				}
 			}
 				
 		}
@@ -29,5 +31,6 @@ public class Ascending {
         {
       	  System.out.print(str[i]+" ");
         }
-     }
+     
+		}
 }
